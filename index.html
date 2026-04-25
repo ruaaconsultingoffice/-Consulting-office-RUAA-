@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مكتب رؤى للاستشارات</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#home" class="nav-logo">
+    <img id="nav-logo-img" src="" alt="رؤى">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">الصفحة الرئيسية</a></li>
+    <li><a href="#library">المكتبة الإلكترونية</a></li>
+    <li><a href="#fields">المجالات</a></li>
+    <li><a href="#portfolio">أعمالنا</a></li>
+    <li><a href="#contact">تواصل معنا</a></li>
+    <li><a href="#" class="nav-book-btn" onclick="openBooking(event)">حجز استشارة</a></li>
+  </ul>
+</nav>
+
+<!-- BOOKING MODAL -->
+<div id="booking-page">
+  <div class="booking-modal">
+    <div class="booking-close" onclick="closeBooking()">✕</div>
+    <img id="booking-logo-img" src="" alt="رؤى" class="booking-logo">
+    <div class="booking-title">احجز استشارتك</div>
+    <div class="booking-sub">نحن هنا لمساعدتك في تحقيق أهدافك</div>
+    <button class="booking-main-btn" onclick="revealPhone()">تواصل معنا</button>
+    <div class="booking-phone-reveal" id="booking-phone">+966 50 181 6998</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">مكتب استشارات متخصص</div>
+    <h1 class="hero-title">مكتب "رؤى" للاستشارات</h1>
+    <p class="hero-subtitle">حياك</p>
+    <p class="hero-desc">هنا حيث تتحول الأفكار إلى استراتيجيات ناجحة، ونرسم معكم خارطة طريق واضحة نحو أهدافكم</p>
+    <button class="hero-cta" onclick="openBooking(event)">احجز استشارتك الآن ←</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <span class="section-label">من نحن</span>
+      <h2 class="section-title">شريككم في رحلة التميز المؤسسي</h2>
+      <p>مكتب رؤى للاستشارات، شريككم الموثوق في رحلة التميز المؤسسي. نقدم حلولاً استشارية متكاملة تشمل الحوكمة، الاستشارات القانونية، الاستدامة المالية، تطوير الموارد البشرية، الإدارة المالية، والحلول التقنية، بالإضافة إلى التخطيط الاستراتيجي والتشغيلي والتنفيذي، والاستشارات القيادية والإدارية. نجمع بين الخبرة العميقة والرؤية الاستراتيجية لنساعد مؤسستكم على تحقيق أهدافها بكفاءة واحترافية. معاً نبني مستقبلاً أكثر استدامة ونجاحاً.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <span class="stat-number">0</span>
+        <span class="stat-label">عميل راضٍ</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">0</span>
+        <span class="stat-label">سنوات خبرة</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">0</span>
+        <span class="stat-label">مشروع منجز</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">12</span>
+        <span class="stat-label">مجالات تخصصية</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIELDS -->
+<section id="fields">
+  <div class="fields-header">
+    <span class="section-label">تخصصاتنا</span>
+    <h2 class="section-title">المجالات</h2>
+    <div class="divider"></div>
+  </div>
+<div class="fields-grid">
+  <div class="field-card">
+    <span class="field-icon">⚖️</span>
+    <div class="field-title">الحوكمة المؤسسية</div>
+    <div class="field-desc">نضع أطر حوكمة متكاملة تعزز الشفافية والمساءلة وتحقق أعلى معايير الحوكمة الرشيدة</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">📜</span>
+    <div class="field-title">الاستشارات القانونية</div>
+    <div class="field-desc">فريق قانوني متخصص يقدم الحلول القانونية الشاملة والمتوافقة مع اللوائح المحلية والدولية</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">💰</span>
+    <div class="field-title">الاستدامة المالية</div>
+    <div class="field-desc">نصمم خطط مالية مستدامة تضمن النمو طويل الأمد وتحقق الأهداف المالية لمؤسستكم</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">👥</span>
+    <div class="field-title">تطوير الموارد البشرية</div>
+    <div class="field-desc">برامج متخصصة لتطوير الكوادر البشرية ورفع الكفاءة التشغيلية وبناء ثقافة مؤسسية متميزة</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">📊</span>
+    <div class="field-title">الإدارة المالية</div>
+    <div class="field-desc">حلول إدارية مالية شاملة تشمل التخطيط والتحليل والتقارير لدعم القرارات الاستراتيجية</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">💻</span>
+    <div class="field-title">الحلول التقنية</div>
+    <div class="field-desc">نقدم حلولاً تقنية متكاملة تدعم التحول الرقمي وترفع كفاءة العمليات المؤسسية</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">🎯</span>
+    <div class="field-title">التخطيط الاستراتيجي</div>
+    <div class="field-desc">نضع خرائط طريق استراتيجية واضحة تربط الرؤية بالأهداف وتضمن التنفيذ الفعّال</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">⚙️</span>
+    <div class="field-title">التخطيط التشغيلي</div>
+    <div class="field-desc">تصميم الهياكل التشغيلية وتحسين العمليات لضمان الكفاءة والفاعلية في التنفيذ</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">🏗️</span>
+    <div class="field-title">التخطيط التنفيذي</div>
+    <div class="field-desc">ترجمة الاستراتيجيات إلى خطط تنفيذية قابلة للقياس وقابلة للتطبيق الفعلي على أرض الواقع</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">👑</span>
+    <div class="field-title">الاستشارات القيادية</div>
+    <div class="field-desc">نطور القدرات القيادية ونبني جيلاً من القادة القادرين على قيادة التغيير وتحقيق النتائج</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">📂</span>
+    <div class="field-title">الاستشارات المالية</div>
+    <div class="field-desc">تحليل مالي متعمق ودعم في اتخاذ القرارات المالية الاستراتيجية لتحقيق أفضل العوائد</div>
+  </div>
+  <div class="field-card">
+    <span class="field-icon">🏢</span>
+    <div class="field-title">الاستشارات الإدارية</div>
+    <div class="field-desc">إعادة هيكلة وتطوير الأنظمة الإدارية لرفع مستوى الأداء المؤسسي وتحقيق التميز التشغيلي</div>
+  </div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="team-header">
+    <span class="section-label">كفاءاتنا</span>
+    <h2 class="section-title">المستشارون</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-img-wrap">
+        <img id="waleed-img" src="waleed.png" alt="وليد">
+        <div class="team-img-overlay"></div>
+      </div>
+        <div class="team-info">
+        <div class="team-name">وليد عبد الله الشدوخي</div>
+    <div class="team-role">الاستدامة المالية · الحوكمة · التخطيط الاستراتيجي · التشغيلية · التنفيذية · القيادية</div>
+        </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img-wrap">
+        <img id="mohammed-img" src="mohammed.png" alt="محمد">
+        <div class="team-img-overlay"></div>
+      </div>
+<div class="team-info">
+  <div class="team-name">محمد محمد عبد الغني</div>
+  <div class="team-role">موارد بشرية · القانونية · الإدارية · القيادية · المالية · التقنية · الحوكمة</div>
+</div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="portfolio-header">
+    <span class="section-label">إنجازاتنا</span>
+    <h2 class="section-title">آخر أعمالنا</h2>
+    <div class="divider"></div>
+    <p style="color:rgba(248,248,248,0.5); font-size:15px;">نماذج من أعمالنا الحديثة</p>
+  </div>
+<div class="portfolio-grid">
+  <div class="portfolio-card">
+    <div class="portfolio-img portfolio-img-1">
+      <div class="portfolio-label">
+        <span class="icon">🕐</span>
+        <span class="tag">قريباً</span>
+      </div>
+    </div>
+    <div class="portfolio-info">
+      <div class="portfolio-title">لا يوجد أعمال حتى الآن</div>
+      <div class="portfolio-desc">سيتم إضافة أعمالنا قريباً، تابعونا</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <div class="portfolio-img portfolio-img-2">
+      <div class="portfolio-label">
+        <span class="icon">🕐</span>
+        <span class="tag">قريباً</span>
+      </div>
+    </div>
+    <div class="portfolio-info">
+      <div class="portfolio-title">لا يوجد أعمال حتى الآن</div>
+      <div class="portfolio-desc">سيتم إضافة أعمالنا قريباً، تابعونا</div>
+    </div>
+  </div>
+
+  <div class="portfolio-card">
+    <div class="portfolio-img portfolio-img-3">
+      <div class="portfolio-label">
+        <span class="icon">🕐</span>
+        <span class="tag">قريباً</span>
+      </div>
+    </div>
+    <div class="portfolio-info">
+      <div class="portfolio-title">لا يوجد أعمال حتى الآن</div>
+      <div class="portfolio-desc">سيتم إضافة أعمالنا قريباً، تابعونا</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- LIBRARY -->
+<section id="library">
+  <div class="library-header">
+    <span class="section-label">معرفة وثروة</span>
+    <h2 class="section-title">المكتبة الإلكترونية</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="library-grid">
+    <div class="library-card">
+      <span class="library-icon">📚</span>
+      <div class="library-title">دليل الحوكمة المؤسسية</div>
+      <div class="library-meta">PDF · متاح قريباً</div>
+    </div>
+    <div class="library-card">
+      <span class="library-icon">📰</span>
+      <div class="library-title">تقارير السوق السعودي</div>
+      <div class="library-meta">تقارير · متاح قريباً</div>
+    </div>
+    <div class="library-card">
+      <span class="library-icon">🎓</span>
+      <div class="library-title">محتوى تدريبي متخصص</div>
+      <div class="library-meta">فيديو · متاح قريباً</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-glow"></div>
+  <div class="contact-content">
+    <span class="section-label" style="display:block; margin-bottom:14px;">هل أنت مستعد؟</span>
+    <h2 class="contact-title">ابدأ رحلتك نحو النجاح</h2>
+    <p class="contact-sub">تواصل مع مستشارينا المتخصصين وابدأ رحلة التحول المؤسسي اليوم</p>
+    <button class="contact-btn" onclick="togglePhone()">تواصل معنا</button>
+    <div class="contact-phone" id="contact-phone">+966 50 181 6998</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="logo.png" alt="رؤى">
+  </div>
+  <p style="font-size:15px; font-weight:700; color:rgba(248,248,248,0.6); margin-bottom:8px;">مكتب رؤى للاستشارات</p>
+  <p class="footer-copy">جميع الحقوق محفوظة لمكتب استشارات رؤى © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
